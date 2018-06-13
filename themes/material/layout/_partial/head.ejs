@@ -118,6 +118,8 @@
 
     <%- partial('_partial/config_css') %>
 
+    <link rel="stylesheet" href="<%= url_for('css/jquery.fancybox.min.css') %>">
+
     <!-- Import jQuery -->
     <% if(theme.vendors.jquery) { %>
         <%- jsLsload({path:(theme.vendors.jquery),key:'jq_js'}) %>
@@ -126,6 +128,8 @@
     <% } else { %>
         <%- jsLsload({path:('js/jquery.min.js'),key:'jq_js'}) %>
     <% } %>
+
+    <%- jsLsload({path:('js/jquery.fancybox.min.js'),key:'jq_fb_js'}) %>
 
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -196,5 +200,4 @@
             <%- site.data.head[i] %>
         <% } %>
     <% } %>
-
 </head>
