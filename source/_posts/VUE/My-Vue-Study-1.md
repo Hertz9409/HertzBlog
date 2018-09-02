@@ -11,6 +11,8 @@ categories: vue
 
 #### 浏览器调试器： [Vue Devtools](https://github.com/vuejs/vue-devtools#vue-devtools)
 
+<!-- more -->
+
 ### 使用Vue:
 
 1.直接&lt;script&gt;引入<br/>
@@ -20,8 +22,6 @@ categories: vue
 
 2.NPM安装<br/>
  <code>$ npm install vue</code>
-
-<!-- more -->
 
 3.使用Vue-Cli<br/>
 <code>

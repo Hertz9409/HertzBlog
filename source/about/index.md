@@ -1,12 +1,6 @@
 ---
 title: about
-date: 2018-03-23 16:49:32
+date: 2018-09-02 22:38:44
+layout: about
+type: about
 ---
-
-# 关于我
-
-### QQ: 1364936400
-
-### github: Hertz9409
-
-### 职业: 前端小鸟 :)
