@@ -7,6 +7,8 @@ categories: others
 
 字体图标相比传统的图标有很多优势,现在在前端项目中已经非常流行了,而且网上也提供了很多开源的图标库.
 
+关于字体图标的相关介绍可以看[前端团队知识仓库中的这篇文章](https://github.com/DIST-XDATA/Library/blob/master/WebFont/IconFont.md)
+
 <!-- more -->
 
 ## 现状
