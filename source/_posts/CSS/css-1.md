@@ -25,9 +25,9 @@ content,padding,border的背景由'background'属性指定; margin的背景总�
 margin,border,padding存在各种定义好的属性和参数,以后再详细介绍.
 
     W3C标准下：盒总宽/高度 = width/height + padding + border + margin;
-
+    
     怪异模式下：盒总宽/高度 = width/height + margin = 内容宽/高度 + padding + border + margin;
-
+    
     CSS3中， box-sizing 默认为 content-box ，即采用W3C标准盒模型，若取值 border-box 则采用怪异模式盒模型。
 
 ![盒子模型样例](./盒子模型.png)
@@ -206,7 +206,7 @@ BFC解决子元素浮动导致的高度塌陷问题,BFC浮动元素也参与高�
     该属性说明了元素盒的哪一边不能与之前的浮动盒相邻。
     left/right/both: 要求该盒的上边框边界位于源文档中在该元素之前的元素形成的所有左浮动盒/右浮动盒/左浮动盒和右浮动盒的下外边界下方;
     none: 对该盒相对于浮动盒的位置没有约束。
-
+    
     值不为'none'就隐含了要引入空隙（clearance）。空隙会阻止外边距合并，并作为元素margin-top上方的空间。用来在垂直方向上把元素推离浮动（元素）
 
 ## 绝对定位(absolute)
@@ -225,3 +225,27 @@ BFC解决子元素浮动导致的高度塌陷问题,BFC浮动元素也参与高�
     2. 否则，如果'position'值为'absolute'或者'fixed'，盒就是绝对定位的。'float'的计算值置为'none'且display设置为'block'。盒的位置将由'top'，'right'，'bottom'和'left'属性以及盒的包含块决定
     3. 否则，如果'float'值不为'none'，那么盒是浮动的，display设置为'block'.
     4. 否则，其它'display'属性值（计算值）就用指定值
+## 可视化效果
+
+### 溢出和裁剪
+
+一般情况下,一个块盒的内容被限制在该盒的内容边界内,但是在某些情况下,盒子会出现溢出:
+
+* 一行无法拆分,行框比块盒宽
+* 一个块级盒对其包含块来说太宽了
+* 一个元素的高度超出了为其包含快显式指定的高度
+* 一个后代盒子是绝对定位,并且部分内容在父盒子外部时
+* 一个后代盒具有负margin,导致它的部分内容被定位在该盒外部
+* 'text-indent'属性让一个行框挂在该块盒的左边界或右边界上
+
+overflow属性:指定了块容器元素的内容从该元素的盒中溢出时是否需要裁剪
+
+* visible: 内容不会被裁剪
+* hidden:内容会被裁剪
+* scroll: 内容会被裁剪,但是会提供滚动条
+* auto: 依赖于浏览器自行判断,如果溢出则类似scroll处理
+
+clip属性:裁剪区域（clipping region）定义了一个元素边框框中的哪一部分是可见的.当需要展示不规则dom时,可以采用此方法
+
+* auto: 不裁剪
+* <shape> : rect(top, right, bottom, left),目前只可以裁剪矩形,css3中增加了新的属性**clip-path**可以裁剪不规则图形
