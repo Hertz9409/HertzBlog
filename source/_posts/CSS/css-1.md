@@ -248,4 +248,4 @@ overflow属性:指定了块容器元素的内容从该元素的盒中溢出时�
 clip属性:裁剪区域（clipping region）定义了一个元素边框框中的哪一部分是可见的.当需要展示不规则dom时,可以采用此方法
 
 * auto: 不裁剪
-* <shape> : rect(top, right, bottom, left),目前只可以裁剪矩形,css3中增加了新的属性**clip-path**可以裁剪不规则图形
+* shape : rect(top, right, bottom, left),目前只可以裁剪矩形,css3中增加了新的属性**clip-path**可以裁剪不规则图形

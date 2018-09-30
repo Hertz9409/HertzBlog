@@ -25,7 +25,7 @@ categories: css
 |          E[foo]           |                 匹配所有设置了foo属性的E元素                 |       属性选择器       |
 |     E[foo="warning"]      |            匹配所有foo属性设置为"warning"的E元素             |       属性选择器       |
 |     E[foo~="warning"]     | 匹配所有"foo"属性值为一列空格分隔的值，且其中之一恰好是"warning"的E元素 |       属性选择器       |
-|      E[lang\|="en"]       | 匹配所有"lang"属性值为一列以"en"开头（从左向右）用连字符分隔的值的E元素 |       属性选择器       |
+|    E[lang&#124;="en"]     | 匹配所有"lang"属性值为一列以"en"开头（从左向右）用连字符分隔的值的E元素 |       属性选择器       |
 |        DIV.warning        |      *语言特定的*（HTML中，与DIV[class~="warning"]相同       |        类选择器        |
 |          E#myid           |                  匹配所有ID为"myid"的E元素                   |        id选择器        |
 
