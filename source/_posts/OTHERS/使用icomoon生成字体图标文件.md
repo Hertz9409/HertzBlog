@@ -1,7 +1,7 @@
 ---
 title: 使用icomoon生成字体图标文件
 date: 2018-09-25 13:17:16
-tags: icomoon 字体图标 dgp-icon
+tags: [icomoon,字体图标,dgp-icon]
 categories: others
 ---
 

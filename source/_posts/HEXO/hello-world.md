@@ -1,6 +1,6 @@
 ---
 title: Hello World With Hexo
-tags: Hexo
+tags: [Hexo]
 categories: hexo
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: My Vue Study (1)
 date: 2018-03-23 16:45:00
-tags: Vue
+tags: [Vue]
 categories: vue
 ---
 

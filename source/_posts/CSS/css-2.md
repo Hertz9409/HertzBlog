@@ -1,7 +1,7 @@
 ---
 title: CSS基础知识二
 date: 2018-09-30 11:18:58
-tags: 前端 CSS
+tags: [前端,CSS]
 categories: css
 ---
 

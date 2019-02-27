@@ -1,7 +1,7 @@
 ---
 title: WIN10 FLASH DEBUGGER FOR IE
 date: 2018-03-22 15:33:23
-tags: Flex
+tags: [Flex]
 categories: flex
 ---
 

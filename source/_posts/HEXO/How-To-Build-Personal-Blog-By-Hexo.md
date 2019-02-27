@@ -1,7 +1,7 @@
 ---
 title: How To Build Personal Blog By Hexo
 date: 2018-04-02 14:36:05
-tags: Hexo
+tags: [Hexo]
 categories: hexo
 ---
 

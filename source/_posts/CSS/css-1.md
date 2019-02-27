@@ -1,6 +1,6 @@
 ---
 title: CSS基础知识 一
-tags: 前端 CSS
+tags: [前端,CSS]
 categories: css
 ---
 

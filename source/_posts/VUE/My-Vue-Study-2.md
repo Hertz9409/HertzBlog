@@ -1,7 +1,7 @@
 ---
 title: Vue语法总结
 date: 2018-04-04 15:18:42
-tags: Vue
+tags: [Vue]
 categories: vue
 ---
 # Vue语法糖(以伪代码为例)
@@ -44,7 +44,7 @@ Vue是一套用于构建用户界面的渐进式框架，只关注视图层MVVM(
             seen: true
         }
     })
-
+    
     <div id="app">
         <ol>
             <li v-for="(todo,index) in todos">{{ todo.text }}</li>
@@ -206,10 +206,10 @@ prop验证：为组件的 prop 指定验证规则。如果传入的数据不符�
         v-bind:class="{ active: isActive, 'text-danger': hasError }">
     </div>
     data: {isActive: true, hasError: false}
-
+    
     <div v-bind:class="[activeClass, errorClass]"></div>
     data: {activeClass: 'active', errorClass: 'text-danger'}
-
+    
     <div v-bind:style="styleObject"></div>
     data: {
         styleObject: {color: 'red',fontSize: '13px'}

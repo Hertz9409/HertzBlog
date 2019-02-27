@@ -1,6 +1,6 @@
 ---
 title: Hexo 配置完善
-tags: Hexo
+tags: [Hexo]
 categories: hexo
 ---
 
@@ -20,10 +20,10 @@ hexo搭建后,我们需要加入许多个性化功能,在此进行记录.
 
         (function($) {
             var upperLimit = 1000;
-    
+        
             // Our scroll link element
             var scrollElem = $('#totop');
-    
+        
             // Scroll to top speed
             var scrollSpeed = 1600;
             scrollElem.hide();

@@ -6,9 +6,11 @@
 title: Hertz·Blog by hexo
 subtitle: Hertz自建博客
 description: 博客 学习 前端修炼
+keywords: WebGIS FontEnd
 author: Hertz
 language: zh-CN
 timezone: Asia/Shanghai
+email: 1364936400@qq.com
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -42,7 +44,7 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -51,7 +53,7 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -72,7 +74,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: annie
+theme: indigo
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -81,9 +83,8 @@ deploy:
   repository: https://github.com/Hertz9409/Hertz9409.github.io.git
   branch: master
 
-
 archive_generator:
-  per_page: 0  
+  per_page: 0
   yearly: false
   monthly: false
   daily: false
@@ -94,3 +95,27 @@ search:
   versionPath: searchVersion.txt
   field: post
   #field: post, page or all
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 0
+
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: true
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
